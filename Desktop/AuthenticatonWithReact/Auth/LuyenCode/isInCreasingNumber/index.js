@@ -34,3 +34,18 @@ function isInCreasingNumber(n)  {
         remaining = Math.trunc(remaining / 10) //12
     }
 }
+
+
+// c2 :
+
+function isInCreasingNumber1(n)  {
+    if(n < 10) return false;
+
+    const numberString = n.toString();
+    for(let i = 0 ; i < numberString.length; i++) {
+        // if 
+        if(numberString[i] <= numberString[i -1]) return false;
+    }
+    return true;
+}
+
